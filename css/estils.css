@@ -1,0 +1,160 @@
+/* ===== IMPORTACIÓ DE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;700&display=swap');
+
+
+
+/* ===== DISTRIBUCIÓ (codi donat, no el modifiqueu) ===== */
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; gap: 32px; }
+.resultats { display: flex; gap: 24px; }
+.targeta { flex: 1; }
+
+/* ===== ELS VOSTRES ESTILS ===== */
+
+/* 1.2 Estils generals */
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* 1.3 Capçalera */
+header {
+    background-color: #0b3a5e;
+    padding: 15px 30px; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #01b4e4;
+}
+
+/* 1.4 Buscador */
+#buscador {
+    background-color: #032541;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#buscador h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem; 
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px 0;
+}
+
+#buscador > p {
+    color: #b0c4de;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+
+#buscador form {
+    max-width: 750px;   
+    width: 100%;        
+    margin: 0 auto;     
+    display: flex;
+    justify-content: center; 
+}
+
+#search {
+    width: 80%;         
+    border: none;
+    background-color: #1a3a4a;
+    color: white;
+    padding: 14px 20px; 
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+#search::placeholder {
+    color: #8bb1c7;
+}
+
+#boton {
+    width: 20%;         
+    background-color: #01b4e4;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    padding: 14px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#boton:hover {
+    background-color: #0299c4;
+}
+
+/* 1.5 Resultats */
+#resultat {
+    text-align: center;
+    margin: 30px 0 20px 0; 
+    font-size: 22px; 
+}
+
+.resultats {
+    padding: 0 20px 40px 20px; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.targeta {
+    background-color: #0b3a5e;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 220px; 
+    width: 100%;
+}
+
+.targeta img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+    border-radius: 6px 6px 0 0;
+}
+
+.targeta .info {
+    padding: 12px; 
+}
+
+.targeta h3 {
+    color: white;
+    font-size: 15px; 
+    margin: 0 0 5px 0;
+}
+
+.targeta p {
+    color: #90cea1;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* 1.6 Peus de pàgina */
+footer {
+    background-color: #032541;
+    color: #b0c4de;
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+}
